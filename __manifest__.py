@@ -21,13 +21,12 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        # 'data/quranum_majid.quran_teks_arab.csv',
-        'views/quran_teks_arab.xml',
+        'data/quranum_majid.bahasa.csv',
+        'data/quranum_majid.surat.csv',
         'views/views.xml',
-        'views/templates.xml',
+        'views/bahasa.xml',
+        'views/surat.xml',
+        'views/teks.xml',
+        'views/tafsir.xml',
     ],
-    # only loaded in demonstration mode
-    # 'demo': [
-    #     'demo/demo.xml',
-    # ],
 }

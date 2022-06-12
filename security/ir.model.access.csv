@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_quranum_majid_quran_teks_arab,quranum_majid.quran_teks_arab,model_quranum_majid_quran_teks_arab,base.group_user,1,1,1,1
+access_quranum_majid_surat,quranum_majid.surat,model_quranum_majid_surat,base.group_user,1,1,1,1
+access_quranum_majid_bahasa,quranum_majid.bahasa,model_quranum_majid_bahasa,base.group_user,1,1,1,1
+access_quranum_majid_teks,quranum_majid.teks,model_quranum_majid_teks,base.group_user,1,1,1,1
+access_quranum_majid_tafsir,quranum_majid.tafsir,model_quranum_majid_tafsir,base.group_user,1,1,1,1

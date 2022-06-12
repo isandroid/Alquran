@@ -1,3 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from . import quran_teks_arab
+from . import bahasa
+from . import surat
+from . import teks
+from . import tafsir

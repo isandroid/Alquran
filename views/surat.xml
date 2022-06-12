@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="surat_list">
+      <field name="name">List Surat Quran</field>
+      <field name="model">quranum_majid.surat</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="tempat_turun"/>
+          <field name="jumlah_ayat"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="quranum_majid.surat_action_window">
+      <field name="name">Jendela Surat</field>
+      <field name="res_model">quranum_majid.surat</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="quranum_majid.surat_action_server">
+      <field name="name">quranum_majid server</field>
+      <field name="model_id" ref="model_quranum_majid_quranum_majid"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="quranum_majid.surat_menu_1" parent="quranum_majid.surat_menu_root"/>
+    <menuitem name="Menu 2" id="quranum_majid.surat_menu_2" parent="quranum_majid.surat_menu_root"/>
+-->
+    <!-- actions -->
+
+    <menuitem name="Surat Alquran" id="quranum_majid.surat_menu" parent="quranum_majid.menu_root"
+              action="quranum_majid.surat_action_window"/>
+<!--     <menuitem name="Server to list" id="quranum_majid" parent="quranum_majid.surat_menu_2"
+              action="quranum_majid.surat_action_server"/> --> 
+
+  </data>
+</odoo>
